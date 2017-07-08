@@ -128,6 +128,15 @@ a.scrollup i:hover {
 }
 
 
+@font-face {
+    font-family: "Old School Font";
+    src: url(../font/coolvetica-rg.ttf) format("truetype");
+}
+.h3 oldschoolfont { 
+    font-family: "Old School Font", Verdana, Tahoma;
+}
+
+
 /*---------- forms ----------*/
 
 input[type=text], input[type=submit], textarea {
@@ -275,6 +284,7 @@ h2.pagetitle {
 04. Navigation
 ============================================================ */
 
+
 .navbar-fixed-top .container {
 /* Uncomment to make nav expand full width */
  /*	width: auto; */
@@ -286,11 +296,10 @@ h2.pagetitle {
 }
 .navbar .brand a {
 	padding: 0;
-	color: #fff;
+	color: #000;
 	font-size: 1.75em;
 	margin-left: 0;
 	font-weight: 400;
-	text-transform:uppercase;
 }
 .navbar .brand a:hover {
 	text-decoration: none;
@@ -305,8 +314,9 @@ h2.pagetitle {
 	min-height: 4.75em;
 }
 .navbar-inverse .navbar-inner {
-	background-repeat: repeat;
-	background-color: #0b333f;
+	background-repeat: none;
+    background-image: none; 
+	background-color: #000;
 }
 .navbar-wrapper {
 	overflow:hidden;
@@ -316,7 +326,7 @@ h2.pagetitle {
 }
 ul#menu-main > li > a {
 	font-weight: 600;
-	color: #fff;
+	color: #000;
 	font-size:14px;
 	text-transform:uppercase;
 }
@@ -499,7 +509,7 @@ header .logo {
 
 /* the background and other characteristics of the header*/
 #header-wrapper.header-slider {
-	background: #333 url(../img/bg/bg-40.png) no-repeat center fixed ;
+	background: #333 url(../img/cityscape.png) no-repeat center  ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -688,7 +698,7 @@ section.spacer{
 
 /* changes the pcture section which is section 5*/
 section.spacer.bg3 {
-	background: url(../img/bg/bg-40.png) no-repeat center fixed;
+	background: url(../img/bg/bg-40.png) no-repeat center ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1909,4 +1919,10 @@ i.icon-white {
 	#contact-form input[type=submit] {
 		width: 100%;
 	}
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin: auto;
 }
