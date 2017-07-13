@@ -509,11 +509,8 @@ header .logo {
 
 /* the background and other characteristics of the header*/
 #header-wrapper.header-slider {
-	background: #333 url(../img/cityscape.png) no-repeat center  ;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #333 url(../img/tile.png) no-repeat center  ;
+    background-repeat: repeat;
     align-items: center;
     justify-content: center;
     
