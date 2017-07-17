@@ -10,7 +10,6 @@
 
 .clearfix {
   *zoom: 1;
-    box-sizing: border-box;
 }
 
 .clearfix:before,
@@ -265,7 +264,7 @@ a:focus {
 }
 
 .row {
-/*  margin-left: -20px;*/
+  margin-left: -20px;
   *zoom: 1;
 }
 
@@ -281,9 +280,9 @@ a:focus {
 }
 
 [class*="span"] {
-/*  float: left;*/
+  float: left;
   min-height: 1px;
-/*  margin-left: 20px;*/
+  margin-left: 20px;
 }
 
 .container,
@@ -318,10 +317,7 @@ a:focus {
 }
 
 .span6 {
-  width: 960px;
-    align-content: center;
-    align-items: center;
-    
+  width: 460px;
 }
 
 .span5 {

@@ -46,7 +46,7 @@ CONTENTS:
 ============================================================ */
 
 div, article, section, header, footer, nav, li {
-	position: center;
+	position:relative;
 }
 .group:after {
 	display:block;
@@ -115,25 +115,15 @@ a.scrollup i:hover {
 }
 
 .row {
-/*	margin-bottom:30px;*/
-/*    margin: auto;*/
+	margin-bottom:30px;
 }
 
 .row .row{
-/*	margin-bottom:30px;*/
+	margin-bottom:30px;
 }
 
 .row.nomargin {
 	margin-bottom:0;
-}
-
-
-@font-face {
-    font-family: "Old School Font";
-    src: url(../font/coolvetica-rg.ttf) format("truetype");
-}
-.h3 oldschoolfont { 
-    font-family: "Old School Font", Verdana, Tahoma;
 }
 
 
@@ -284,7 +274,6 @@ h2.pagetitle {
 04. Navigation
 ============================================================ */
 
-
 .navbar-fixed-top .container {
 /* Uncomment to make nav expand full width */
  /*	width: auto; */
@@ -296,10 +285,11 @@ h2.pagetitle {
 }
 .navbar .brand a {
 	padding: 0;
-	color: #000;
+	color: #fff;
 	font-size: 1.75em;
 	margin-left: 0;
 	font-weight: 400;
+	text-transform:uppercase;
 }
 .navbar .brand a:hover {
 	text-decoration: none;
@@ -314,9 +304,8 @@ h2.pagetitle {
 	min-height: 4.75em;
 }
 .navbar-inverse .navbar-inner {
-	background-repeat: none;
-    background-image: none; 
-	background-color: #000;
+	background-repeat: repeat;
+	background-color: #0b333f;
 }
 .navbar-wrapper {
 	overflow:hidden;
@@ -326,7 +315,7 @@ h2.pagetitle {
 }
 ul#menu-main > li > a {
 	font-weight: 600;
-	color: #000;
+	color: #fff;
 	font-size:14px;
 	text-transform:uppercase;
 }
@@ -351,179 +340,44 @@ ul#menu-main > li > a:focus {
 
 /* === section header === */
 
-/* the dimentions of the whole header*/
 #header-wrapper {
-	/*margin: auto;
+	width: 100%;
 	min-height: 600px;
 	margin-top: -60px;
-	padding-top: 160px;*/
-	text-align: center;
-    display: flex;
-   /* align-items: absolute;*/
-    justify-content: center;
+	padding-top:160px;
+	text-align:center;
 }
 
-/* the text of the date and location in the header8*/
-header .htext {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: center;
-}
 
-/* made this in attempt to align all of the items in the header in the center*/
-header .container{
-    align-items: center;
-    justify-content: center;
-    position: center;
-    width: 100%
-}
-
-/* the button in the header for sign up*/
-.button {
-    text-align: center;
-    padding:  0;
-}
-
-/* the header text of the h1 variety*/
 #header-wrapper h1 {
-	color: #333;
+	color: #FFFFFF;
 	font-size: 4em;
 	font-weight: 400;
-	margin: 0;
-    text-align: center;
+	margin: 1em 0;
 }
-
-/* the header text of the h2 variety*/
 #header-wrapper h2 {
-	color: #333;
+	color: #fff;
 	font-family: 'Open Sans', sans serif;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: normal;
 	margin: 0.5em 0;
 	text-shadow: 1px 1px 1px #333333;
-    text-align: center;
 }
-/* the logo in the header*/
+
 header .logo {
 	text-align:center;
-/*	margin-bottom:30px;*/
+	margin-bottom:30px;
 }
-
-/*responsve bootstrap countdown timer*/
-/*.container {
-  margin: 0px auto;
-  padding: 0px;
-}*/
-
-/*#main { 
-  background: #f80303;
-  height: 430px;
-}
-
-.content {
-  padding: 10px 44px;
-}*/
-
-/*.text {
-  border-bottom: 1px solid #262626;
-  margin-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-}*/
-
-/*.text h2 {
-  color: #5812f7;
-  font-size: 30px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: lighter;
-  letter-spacing: 2px;
-}*/
-
-.counter {
-  background: 0xf51313;
-  -moz-box-shadow:    inset 0 0 0px #000000;
-  -webkit-box-shadow: inset 0 0 0px #000000;
-  box-shadow:         inset 0 0 0px #000000;
-  min-height: 20px;
-  text-align: center;
-}
-
-/*.counter h3 {
-  color: #333;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}*/
-
-/*
-#countdown {
-  color: 0x3512f8;
-}
-*/
-
-#countdown span {
-  color: #333;
-  font-size: 35px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-}
-
-/*the count down start*/
-/*
-#countdown {
-    text-align: center;
-    margin:  110px 0px 69px;
-    min-height: 104px;
-}
-#countdown > div {
-    width: 100px;
-    height: 100px;
-    margin: 0px 1%;
-    display: inline-block;
-    font-size: 20px;
-    line-height: 52px;
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-#countdown > div > span
-{
-	display: block;
-}
-*/
-
-/*the count down end*/
 
 /* --- Header slider --- */
-
-/* the background and other characteristics of the header*/
 #header-wrapper.header-slider {
-	background: #333 url(../img/tile.png) no-repeat center  ;
-    background-repeat: repeat;
-    align-items: center;
-    justify-content: center;
-    
-    box-sizing: border-box;
-
+	background: #444 url(../img/bg/bg-1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-.header-slider {
-    align-items: center;
-    justify-content: center;
-    padding: 70px 0;}
-
-/* characteristic of the contents of the slider, the text*/
 #main-flexslider ul.slides li p {
 	font-size: 72px;
 	text-transform: uppercase;
@@ -531,14 +385,12 @@ header .logo {
 	margin-bottom: 0px;
 	text-align: center;
 	line-height: 1;
-	color:#333;
+	color:#fff;
 }
-
-/* characteristics of the slider in the header*/
 #main-flexslider.flexslider {
 		margin:0;
 		background:none;
-		border: none;
+		border:none;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	-o-border-radius: 0;
@@ -547,14 +399,12 @@ header .logo {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
-    align-items: center;
-    justify-content: center;
 }
 
 
 
 /* --- Header subscribe form --- */
-/* not sure waht this is*/
+
 #header-wrapper input[type=text] {
 	background: rgba(227, 231, 228, 1);
 	font-family: 'Open Sans', sans serif;
@@ -564,8 +414,6 @@ header .logo {
 	vertical-align: middle;
 	margin-bottom:0 !important;
 }
-
-/* not sure waht this is*/
 #header-wrapper input[type=text]:focus {
 	background: #43413e;
 	color: #eff1ef;
@@ -573,16 +421,12 @@ header .logo {
 	-moz-transition: background 0.25 ease-in;
 	-webkit-transition: background 0.25 ease-in;
 }
-
-/* not sure waht this is*/
 #header-wrapper input[type=text] {
 	height: 2.9em;
 	width:50%;
 }
-
-/* not sure waht this is*/
 #header-wrapper input[type=submit] {
-	color: #f51c1c;
+	color: #fff;
 	width: 185px;
 	height: 2.9em;
 	font-size: 1.3125em; /* 21px */
@@ -595,112 +439,69 @@ header .logo {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
-
-/*header background when loading*/
 #header-wrapper input[type=submit]:hover, #header-wrapper input[type=submit]:active {
 	background: #43413e !important;
 }
 
-/* section 2,3,4,6,7's dementions*/
-section.section {
-	padding: 90px 0 80px;
-}
 
-/* section 3-7's header text size*/
+section.section {
+	padding: 100px 0 80px;
+}
 section.section h4 {
 	text-align: center;
 	margin-bottom: 40px;
-	font-size: 40px;
+	font-size: 46px;
 	font-weight: 700;
 	letter-spacing: -1px;
 }
-/*this is the spacer right after the header and  */
 section.inner {
-	padding: 50px 0px 50px 0px;
+	padding: 50px 0 50px;
 }
 
 
-/* the third sections header text*/
-.section.orange h4{
-	color: #fff;
-}
 
-/*paragraph text in the last section and the first section, if there is any*/
+.section.orange h4 ,.section.green h4{
+	color: #fcfcfc;
+}
 .section.orange p,.section.green p {
-	color: #fff;
+	color: #f7f7f7;
 }
 
 
 /* === section spacer === */
 
-section .space1text{
-    padding: 0px 0px 0px 0px;
+section.spacer {
+	padding:90px 0 70px;
 	color:#fcfcfc;
-    align-content: center;
-}
-section .tcons{
-    height: 10em;
-    position: absolute;
-    padding: 0px;
-    height: auto;
-    width: auto;
-    margin-left: 50px;
-    
 }
 
-
-/* the text in the first section*/
-section.spacer h2{
-	padding: 20px 0px 0px 0px;
-	color:#fcfcfc;
-    text-align: center;
-    margin-top: 0px;
-}
-
-/*the fisrt section and the 5th section dimentions*/
-section.spacer{
-	padding: 2px 0px 60px 0px ;
-   
-    align-items: center;
-	
-}
-
-/* the first section and the last section background color*/
 .spacer.green,.section.green {
-	background:#333;
-    
+	background:#1bac91;
 }
 
-/*the "Get in Touch" in the last section and the icons in the first section*/
 .spacer.green,.section.green h4 {
 	color:#fff;
 }
 
-/* for some reason it is necessary to color the third section*/
 .spacer.yellow,.section.yellow  {
-	background:#ff7399;
+	background:#ffe873;
 }
-
-/* actually colors the third section*/
 .spacer.orange,.section.orange {
-	background:#36cff3;
+	background:#f36f36;
 }
 
-/*section.spacer.bg2 {
+section.spacer.bg2 {
 	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
 	margin:0;	
-} has no importance that i can see*/
+}
 
-/* changes the pcture section which is section 5*/
 section.spacer.bg3 {
-	background: url(../img/bg/bg-40.png) no-repeat center ;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}	
+	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
+	width:100%;
+	height:auto;
+	margin:0;	
 }
 
 section.spacer blockquote.large:before {
@@ -924,18 +725,6 @@ section.spacer blockquote cite {
 
 /* === section services === */
 
-.floating-box {
-    display: inline-block;
-    width: 150px;
-    height: 75px;
-    margin: 10px;
-    border: 1px solid #ffffff;  
-}
-
-.row-services{
-    align-content: center;
-}
-
 section#services h2 {
 	font-size: 22px;
 	margin-bottom: 15px;
@@ -957,7 +746,7 @@ section#services .service-box {
 	transition: all 0.3s ease-in-out;
 }
 section#services .span3:hover {
-	background:0x1a0404;
+	background:#e3e3e3;
 }
 
 section#services .service-box h2 {
@@ -966,7 +755,7 @@ section#services .service-box h2 {
 }
 
 section#services.section.orange .service-box:hover {
-	background:0xf36518;
+	background:#f36518;
 }
 
 
@@ -1916,10 +1705,4 @@ i.icon-white {
 	#contact-form input[type=submit] {
 		width: 100%;
 	}
-}
-
-#map {
-  height: 400px;
-  width: 100%;
-  margin: auto;
 }
