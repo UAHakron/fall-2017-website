@@ -1,3 +1,4 @@
+
 /*
     Theme Name: Maxim
     Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
@@ -365,13 +366,13 @@ ul#menu-main > li > a:focus {
 }
 
 header .logo {
-	text-align:center;
 	margin-bottom:30px;
+    width:65%;
 }
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/bg/bg-1.jpg) no-repeat center center fixed;
+	background: #444 url(../img/background.svg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
