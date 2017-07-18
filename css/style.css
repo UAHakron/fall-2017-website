@@ -372,11 +372,9 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/background.svg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #444 url(../img/background.svg) center;
+	background-repeat: repeat;
+    background-size: 50%;
 }
 
 #main-flexslider ul.slides li p {
@@ -459,13 +457,11 @@ section.inner {
 	padding: 50px 0 50px;
 }
 
-
-
-.section.orange h4 ,.section.green h4{
-	color: #fcfcfc;
+.section.orangered h4,.section.green h4,.section.blue h4{
+    color: #fcfcfc;
 }
-.section.orange p,.section.green p {
-	color: #f7f7f7;
+.section.orangered p,.section.green p,.section.blue p {
+    color: #f7f7f7;
 }
 
 
@@ -474,32 +470,42 @@ section.inner {
 section.spacer {
 	padding:90px 0 70px;
 	color:#fcfcfc;
-}
+}   
 
 .spacer.green,.section.green {
-	background:#1bac91;
+    background:#b7a70f;
 }
 
 .spacer.green,.section.green h4 {
-	color:#fff;
+    color:#fff;
 }
 
-.spacer.yellow,.section.yellow  {
-	background:#ffe873;
+.spacer.yellow,.section.yellow {
+    background:#e0ae12;
 }
-.spacer.orange,.section.orange {
-	background:#f36f36;
+
+.spacer.orangered,.section.orangered {
+    background:#dd5431;
+}
+.spacer.brown,.section.brown {
+    background:#4a3223;
+}
+.spacer.blue,.section.blue {
+    background:#246596;
+}
+.spacer.cream,.section.cream {
+    background:#f7edcd;
 }
 
 section.spacer.bg2 {
-	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;	
 }
 
 section.spacer.bg3 {
-	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;	
