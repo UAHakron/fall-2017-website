@@ -10,6 +10,10 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="color/default.css" rel="stylesheet">
 <link rel="shortcut icon" href="img/favicon.ico">
+    
+<!-- don't load from cache I hope -->
+<meta http-equiv="expires" content="0">
+  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- =======================================================
     Theme Name: Maxim
@@ -165,6 +169,13 @@
 	</div>
     </div>
 </section>
+
+<!-- section: map -->
+<section id="map">
+    <div id="map"></div>
+    <div id="legend"><h3>Legend</h3></div>
+</section>
+    
 <!-- section: faq -->
 <section id="faq" class="section green">
 <div class="container">
@@ -647,7 +658,7 @@
 				<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
 				<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
 			</ul>
-			<p class="copyright">
+            <p class="copyright"></p>
 				&copy; Maxim Theme. All rights reserved.
                 <div class="credits">
                     <!-- 
@@ -658,7 +669,6 @@
                     -->
                     <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
                 </div>
-			</p>
 		</div>
 	</div>
 </div>
@@ -678,6 +688,8 @@
 <script src="js/validate.js"></script>
 <script src="js/custom.js"></script>
 <script src="contactform/contactform.js"></script>
-
+<script src="js/map.js"></script>
+<!-- Google maps thing -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAplK70d2kA7PCk9X91FHB89swLTRfVgKY&callback=initMap"></script>
 </body>
 </html>

@@ -252,6 +252,23 @@ h2.pagetitle {
 03. Misc
 ============================================================ */
 
+#map {
+  height: 35em;
+  width: 100%;
+}
+#legend {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #000;
+}
+#legend h3 {
+  margin-top: 0;
+}
+#legend img {
+    
+}
 .hide-text {
 	text-indent: 100%;
 	white-space: nowrap;
