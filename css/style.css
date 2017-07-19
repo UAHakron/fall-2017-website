@@ -415,6 +415,12 @@ header .logo {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
