@@ -97,13 +97,13 @@
           });
         }
         // MOUSEWHEEL:
-        if (vars.mousewheel) {
-          slider.bind('mousewheel', function(event, delta, deltaX, deltaY) {
-            event.preventDefault();
-            var target = (delta < 0) ? slider.getTarget('next') : slider.getTarget('prev');
-            slider.flexAnimate(target, vars.pauseOnAction);
-          });
-        }
+//        if (vars.mousewheel) {
+//          slider.bind('mousewheel', function(event, delta, deltaX, deltaY) {
+//            event.preventDefault();
+//            var target = (delta < 0) ? slider.getTarget('next') : slider.getTarget('prev');
+//            slider.flexAnimate(target, vars.pauseOnAction);
+//          });
+//        }
         
         // PAUSEPLAY
         if (vars.pausePlay) methods.pausePlay.setup();
@@ -122,7 +122,7 @@
         }
         
         // TOUCH
-        if (touch && vars.touch) methods.touch();
+        //if (touch && vars.touch) methods.touch();
         
         // FADE&&SMOOTHHEIGHT || SLIDE:
         if (!fade || (fade && vars.smoothHeight)) $(window).bind("resize focus", methods.resize);
