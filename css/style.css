@@ -212,6 +212,7 @@ h3 {
 h4 {
 	font-size: 22px;
 	margin-bottom:20px;
+    color: #4A3223;
 }
 h5 {
 	font-size: 18px;
@@ -493,9 +494,16 @@ section.inner {
 
 .clean-accordian {
     border: none;
-    margin: 0px;
-    padding 0px;
-    
+    padding: 0px;
+    width: 50vw;
+    margin: auto;
+    max-width: 800px;
+    min-width: 500px;   
+}
+.accordian-inner {
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 .slider {
@@ -571,6 +579,17 @@ section.spacer blockquote cite {
 
 
 /* === section works === */
+
+.faq-question {
+    font-size: 1.5vmax;
+    color: #4A3223;
+}
+
+.faq-answer {
+    color: #4A3223;
+    font-size: 2vmax;
+    font-weight: bold;
+}
 
 #works h4 {
 	margin-bottom:20px;
@@ -776,7 +795,6 @@ section.spacer blockquote cite {
 	-o-transition-duration: 0s;
 	transition-duration: 0s;
 }
-
 
 /* === section services === */
 
@@ -1511,8 +1529,6 @@ i.icon-white {
 .btn-success {
   color: #ffffff;
   text-shadow: none;
-  background-color: #1bac91;
-  *background-color: #1bac91;
   background-image: none;
   border-color: none;
   filter:none;
