@@ -19,6 +19,8 @@
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
 
+.flex-direction-nav {display: none;}
+
 /* FlexSlider Necessary Styles
 *********************************/ 
 .flexslider {margin: 0; padding: 0;}

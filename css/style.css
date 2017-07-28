@@ -506,6 +506,21 @@ section.inner {
     padding-left: 20px;
 }
 
+.slider {
+    font-family: sans-serif;
+    color: #4a3223;
+   -webkit-text-fill-color: #f7edcd; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #4a3223;
+       user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+
 /* === section spacer === */
 
 section.spacer {
