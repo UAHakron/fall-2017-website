@@ -506,6 +506,13 @@ section.inner {
     padding-left: 20px;
 }
 
+.signup {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: bold;
+    color: #f7edcd;
+}
+
 .slider {
     font-family: sans-serif;
     color: #4a3223;
