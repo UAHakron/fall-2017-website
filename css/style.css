@@ -482,14 +482,14 @@ section.inner {
 }
 
 .section.orangered h4,.section.green h4,.section.blue h4{
-    color: #fcfcfc;
+    color: #f7edcd;
 }
 .orangered p,.section.green p,.section.blue p {
-    color: #f7f7f7;
+    color: #f7edcd;
 }
 
 .section.orangered i, .section.orangered h2 {
-    color: #fff;
+    color: #f7edcd;
 }
 
 .clean-accordian {
@@ -504,6 +504,21 @@ section.inner {
     border: none;
     padding: 5px;
     padding-left: 20px;
+}
+
+.arcade {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.signup {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.cream-font {
+    color: #f7edcd;
 }
 
 .slider {
@@ -525,7 +540,7 @@ user-select: none;
 
 section.spacer {
 	padding:90px 0 70px;
-	color:#fcfcfc;
+	color:#f7edcd;
 }   
 
 .spacer.green,.section.green {
@@ -533,7 +548,7 @@ section.spacer {
 }
 
 .spacer.green h4,.section.green h4 {
-    color:#fff;
+    color:#f7edcd;
 }
 
 .yellow {
