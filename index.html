@@ -1,767 +1,476 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>HAkron</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="color/default.css" rel="stylesheet">
-<link rel="shortcut icon" href="img/favicon.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- =======================================================
+    <meta charset="utf-8">
+    <title>HAkron 2.0 - Sep. 23-24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- don't load from cache I hope -->
+    <meta http-equiv="expires" content="0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- =======================================================
     Theme Name: Maxim
     Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
-======================================================= -->
+         ======================================================= -->
 </head>
+
 <body>
-<!-- navbar -->
-<div class="navbar-wrapper">
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<!-- Responsive navbar -->
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Responsive navbar -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</a>
-				<h1 class="brand"><a href="index.html">HAkron</a></h1>
-				<!-- navigation -->
-				<nav class="pull-right nav-collapse collapse">
-				<ul id="menu-main" class="nav">
-					<li><a title="team" href="#about">About</a></li>
-					<li><a title="services" href="#services">Services</a></li>
-					<li><a title="works" href="#works">Works</a></li>
-					<li><a title="blog" href="#blog">Blog</a></li>
-					<li><a title="contact" href="#contact">Contact</a></li>
-					<li><a href="page.html">Page</a></li>
-				</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Header area -->
-<div id="header-wrapper" class="header-slider">
-	<header class="clearfix">
-     <div class="container">   
-	<div class="logo">
-		<img src="https://hakron.io/img/hakron_clean.svg" alt="" />
-	</div>
-        
-        <!--REASPONSVE BOOTSTRAP COUNTDOWN TIMER-->
-    
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div id="main">
-            <div class="content">
-              <!-- /.Text Div -->
-              <div class="counter">
-                <div id="countdown">
-                    <span class="days"></span>
-                    <span class="hours"></span>
-                    <span class="minutes"></span>
-                    <span class="seconds"></span>
+                    <h1 class="brand"><a href="index.html">HAkron</a></h1>
+                    <!-- navigation -->
+                    <nav class="pull-right nav-collapse collapse">
+                        <ul id="menu-main" class="nav">
+                            <li><a title="team" href="#about">About</a></li>
+                            <li><a title="faq" href="#faq">FAQ</a></li>
+                            <!--<li><a title="schedule" href="#schedule">Schedule</a></li>-->
+                            <li><a title="sponsors" href="#sponsors">Sponsors</a></li>
+                            <li><a title="contact" href="mailto:team@hakron.io">Contact</a></li>
+                            <!--<li><a class="cream-link" href="page.html">Page</a></li>-->
+                        </ul>
+                    </nav>
                 </div>
-                <!-- /#Countdown Div -->
-              </div>
-              <!-- /.Counter Div -->
             </div>
-            <!-- /.Content Div -->
-          </div>
-          <!-- /#Main Div -->
         </div>
-        <!-- /.Columns Div -->
-      </div>
-      <!-- /.Row Div -->
-<!--    </div>-->
-    <!-- /.Container Div -->
-        <script>
-            // set the date we're counting down to
-var target_date = new Date('September, 23, 2017').getTime();
- 
-// variables for time units
-var days, hours, minutes, seconds;
- 
-// get tag element
-var countdown = document.getElementById('countdown');
- 
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
-    // format countdown string + set tag value
-    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
- 
-}, 1000);
-        </script>
-        
-        <!--the count down start-->
-<!--    <div id="countdown" data-wow-delay=".3s" data-date="Dec 26, 2016 06:00:00"></div>-->
-        <!--the count down end-->
-        
-<!--	<div class="container">-->
-		<div class="row">
-			<div class="span12">
-				<div id="main-flexslider" class="flexslider">
-					<ul class="slides">
-						<li>
-						<p class="home-slide-content">
-                            <strong>coding</strong> 
-						</p>
-						</li>
-						<li>
-						<p class="home-slide-content">
-							<strong>Free food and swag</strong> 
-						</p>
-						</li>
-						<li>
-						<p class="home-slide-content">
-							<strong>Awesome prizes</strong> 
-						</p>
-						</li>
-					</ul>
-				</div>
-				<!-- end slider -->
-			</div>
+    </div>
+    <!-- Header area -->
+    <div id="header-wrapper" class="header-slider">
+        <header class="clearfix">
+            <img class="logo" src="img/logo.svg" alt="" />
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div id="main-flexslider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <p class="home-slide-content slider">
+                                        <b>We've Got an Arcade</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content slider">
+                                        <b>Win Prizes</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content slider">
+                                        <b>Get Swag</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content slider">
+                                        <b>Free Food</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content slider">
+                                        <b>Create. Design. Innovate.</b>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end slider -->
+                        
+                    </div>
+                </div>
+                <div class="row">
+                            <div class="button">
+                                <!--<a href="#" class="brown btn-large signup cream-font">Sign Up</a> -->
+                            </div>
+                </div>
             </div>
-        <div class="row">
-        <div class="htext">
-                <h1><strong>September 23rd-24th, 2017</strong></h1>
-                <h2>@ The Bit Factory</h2>
+        </header>
+    </div>
+    <!-- spacer section -->
+    <section class="spacer blue">
+        <div class="container">
+            <div class="row">
+                <div class="span6 alignright flyLeft">
+                    <h1 class="arcade cream-font">
+                    Featuring an arcade, complete with games, points and prizes!
+                    </h1>
+                </div>
+                <div class="span6 aligncenter flyRight">
+                    <i class="fa-trophy icon-10x cream-font"></i>
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- end spacer section -->
+    <!-- section: team -->
+    <section id="about" class="section cream">
+        <div class="container">
+            <h4>Venue</h4>
+            <div class="row">
+                <div class="span4 offset2">
+                    <div>
+                        <h1> <strong>The Bit Factory</strong></h1>
+                        <p>
+                            The Bit Factory is the City of Akron's software startup incubator established in the Akron Global Business Accelorator. Its the perfect place for creativity to forge award-winning hacks!
+                        </p>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="aligncenter">
+                        <img src="img/logos/TheBitFactory%20(Dark%20Text).png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- end section: team -->
+    <!-- section: tracks -->
+    <section id="tracks" class="section orangered cream-font">
+        <div class="container">
+            <h4 class="cream-font">Tracks</h4>
+            <!-- Four columns -->
+            <div class="row">
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <i class="fa fa-heartbeat fa-5x cream-font" aria-hidden="true"></i>
+                        <h2>Health</h2>
+                        <p>
+                            Hack toward anything relating to health. This includes wellness, medical hardware or software, fitness, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3 animated flyIn">
+                    <div class="service-box">
+                        <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+                        <h2>Education</h2>
+                        <p>
+                            Knowledge is the key to success. Hack new ways to improve learning abilities, cognitive skills, or schooling in general.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <i class="fa fa-gamepad fa-5x" aria-hidden="true"></i>
+                        <h2>Games</h2>
+                        <p>
+                            Gamify anything and everything. Create, design, and innovate something awesome and fun.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3 animated-slow flyIn">
+                    <div class="service-box">
+                        <i class="fa fa-shopping-cart fa-5x" aria-hidden="true"></i>
+                        <h2>Retail</h2>
+                        <p>
+                            Shop 'til you drop. See if you can create the next best way to conquer the retail industry. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section: map -->
+    <section id="map">
+        <div id="map"></div>
+        <div id="legend">
+            <h3>Legend</h3>
+        </div>
+    </section>
+
+    <!-- section: faq -->
+    <section id="faq" class="section yellow">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h4>FAQ</h4>
+                    <!-- start: Accordion -->
+                    <div class="accordion" id="accordion2">
+                        
+                        <div class="accordion-group">
+                            <div class="accordion-heading clean-accordian orangered">
+                                <a class="accordion-toggle faq-question" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                    <i class="icon-plus"></i>What is a hackathon?</a>
+                            </div>
+                            <div id="collapseOne" class="collapse clean-accordian orangered">
+                                <div class="accordian-inner">
+                                    <p class="faq-answer">A hackathon is similar to a science fair, but in real time! Motivated students come together and create a novel project in the field of computer science and engineering. It is high-energy, collaborative, and challenging! It allows students use the skills they learned in the classroom and implement it into a project, gaining real world experience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading clean-accordian orangered">
+                                <a class="accordion-toggle faq-question" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    <i class="icon-plus"></i>How can I participate? What would I need?</a>
+                            </div>
+                            <div id="collapseTwo" class="collapse clean-accordian orangered">
+                                <div class="accordian-inner">
+                                    <p class="faq-answer">Any currently enrolled student, or who has graduated within 12 months can participate. Here's how: First, you sign up! You can sign up by pressing the sign up botton on the top of the website. Second, you show up on September 23rd, ready to create something awesome! It is advised that you bring any hardware that you would like to use in your hack. As well as a computer and all the necessary cables. You can check out any hardware you don't have (including a laptop) from the MLH hardware lab. To check what will be available in the hardware lab go here: </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading clean-accordian">
+                                <a class="accordion-toggle orangered faq-question" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                    <i class="icon-plus"></i>What should I bring?</a>
+                            </div>
+                            <div id="collapseThree" class="collapse clean-accordian">
+                                <div class="accordian-inner orangered">
+                                    <p class="faq-answer">Student ID, clothes, toiletries, hacker setup, an idea, and anything else you need to function independently for 24 hours. Oh, and a smile!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading clean-accordian">
+                                <a class="accordion-toggle orangered faq-question" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                                    <i class="icon-plus"></i>How much does it cost?</a>
+                            </div>
+                            <div id="collapseFour" class="collapse clean-accordian">
+                                <div class="accordian-inner orangered">
+                                    <p class="faq-answer">Nothing! Zip! Nada! Attending is absolutely FREE! Free swag, free food, what more could you want?!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading clean-accordian orangered">
+                                <a class="accordion-toggle faq-question" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                                    <i class="icon-plus"></i>Do I need to come with a team?</a>
+                            </div>
+                            <div id="collapseFive" class="collapse clean-accordian orangered">
+                                <div class="accordian-inner">
+                                    <p class="faq-answer">Nope! If you do not have a team we will help you find one. (Max of 4 people per team)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <!--end: Accordion -->
+                </div>
             </div>
             <div class="row">
-        <div class="button">
-                <a href="#" class="btn btn-large btn">Sign Up</a>
-        </div>
-            </div>
-    </div>
-</div>	
-	
-	</header>
-</div>
-<!-- spacer section -->
-<section class="spacer green">
-<div class="container">
-	<div class="row">
-     <div class="space1text">
-            <h2>
-                The University of Akron's premier 24 hour hackathon
-            </h2>
-          <br>
-<!--        <div class="tcons">-->
-            <div class="span2 aligncenter flyRight">
-                <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
-                <p>Health</p>
-            </div>
-            <div class="span2 aligncenter flyRight">
-                <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
-                <p>Education</p>
-            </div>
-            <div class="span2 aligncenter flyLeft">
-                <i class="fa fa-paint-brush fa-5x" aria-hidden="true"></i>
-                <p>Games</p>
-            </div>
-            <div class="span2 aligncenter flyLeft">
-                <i class="fa fa-shopping-cart fa-5x" aria-hidden="true"></i>
-                <p>Retail</p>
-            </div>
-        </div>
-     <!--</div>
-            </div>-->
-<!--    </div>-->
-</section>
-<!-- end spacer section -->
-<!-- section: team -->
-<section id="about" class="section">
-<div class="container">
-	<div class="row">
-		<div class="span4 offset1">
-			<div>
-				<h2><strong>Venue</strong></h2>
-                <h3><a href="https://www.thebitfactory.com">The Bit Factory</a></h3>
-				<p>
-					The Bit Factory is the City of Akron's software startup incubator established in the Akron Global Business Accelorator. Its the perfect place for creativity to forge award-winning hacks!
-				</p>
-			</div>
-		</div>
-		<div class="span6">
-			<div class="aligncenter">
-				<img src="img/icons/creativity.png" alt="" />
-			</div>
-		</div>
-    </div>
-    <div class="row">
-		<div class="span6">
-			<div class="aligncenter">
-				<img src="img/icons/creativity.png" alt="" />
-			</div>
-		</div>
-        <div class="span4 offset1">
-            <div>
-				<h2><strong>Prizes</strong></h2>
-				<p>
-					Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.
-				</p>
-			</div>s
-        </div>
-	</div>
-    <div class="row">
-		<div class="span4 offset1">
-			<div>
-                <h2><strong>Speakers/Workshops</strong></h2>
-				<p>
-					Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.
-				</p>
-			</div>
-		</div>
-		<div class="span6">
-			<div class="aligncenter">
-				<img src="img/icons/creativity.png" alt="" />
-			</div>
-		</div>
-    </div>
-	<!--<div class="row">
-		<div class="span2 offset1 flyIn">
-			<div class="people">
-				<img class="team-thumb img-circle" src="img/team/img-1.jpg" alt="" />
-				<h3>John Doe</h3>
-				<p>
-					Art director
-				</p>
-			</div>
-		</div>
-		<div class="span2 flyIn">
-			<div class="people">
-				<img class="team-thumb img-circle" src="img/team/img-2.jpg" alt="" />
-				<h3>Mike Doe</h3>
-				<p>
-					Web developer
-				</p>
-			</div>
-		</div>
-		<div class="span2 flyIn">
-			<div class="people">
-				<img class="team-thumb img-circle" src="img/team/img-3.jpg" alt="" />
-				<h3>Neil Doe</h3>
-				<p>
-					Web designer
-				</p>
-			</div>
-		</div>
-		<div class="span2 flyIn">
-			<div class="people">
-				<img class="team-thumb img-circle" src="img/team/img-4.jpg" alt="" />
-				<h3>Mark Joe</h3>
-				<p>
-					UI designer
-				</p>
-			</div>
-		</div>
-		<div class="span2 flyIn">
-			<div class="people">
-				<img class="team-thumb img-circle" src="img/team/img-5.jpg" alt="" />
-				<h3>Stephen B</h3>
-				<p>
-					Digital imaging
-				</p>
-			</div>
-		</div>
-	</div>
-</div>-->
-<!-- /.container -->
-</section>
-<!-- end section: team -->
-<!-- section: services -->
-<section id="services" class="section orange">
-<div class="container" style="width: 960px;">
-    <div class="span6">
-        <h4 style="width: 960px;">FAQ</h4>
-					<!-- start: Accordion -->
-					<div class="accordion" id="accordion2" style="width: 960px;">
-						<div class="accordion-group">
-							<div class="accordion-heading" style="width: 958px;">
-								<a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" >
-								<i class="icon-minus"></i> Collapsible Group Item #1 </a>
-							</div>
-							<div id="collapseOne" class="accordion-body collapse in" style="width: 960px; height: auto;">
-								<div class="accordion-inner" style="height: 120px; width: 928px;">
-									 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordion-heading" style="width: 958px;">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-								<i class="icon-plus"></i> Collapsible Group Item #2 </a>
-							</div>
-							<div id="collapseTwo" class="accordion-body collapse" style="width: 960px; height: auto;">
-								<div class="accordion-inner" style="height: 120px; width: 928px;">
-									 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordion-heading" style="width: 958px;">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-								<i class="icon-plus"></i> Collapsible Group Item #3 </a>
-							</div>
-							<div id="collapseThree" class="accordion-body collapse" style="width: 960px; height: auto;">
-								<div class="accordion-inner" style="height: 120px; width: 928px;">
-									 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--end: Accordion -->	
-		</div>
-	<!-- Four columns -->
-	<!--<div class="row-services">
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>
-        <div class="floating-box">Floating box</div>-->
-        
-        
-		<!--<div class="span3 animated-fast flyIn">
-			<div class="service-box">
-				<img src="img/icons/laptop.png" alt="" />
-				<h2>Web design</h2>
-				<p>
-					 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-			</div>
-		</div>
-		<div class="span3 animated flyIn">
-			<div class="service-box">
-				<img src="img/icons/lab.png" alt="" />
-				<h2>Web development</h2>
-				<p>
-					 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-			</div>
-		</div>
-		<div class="span3 animated-fast flyIn">
-			<div class="service-box">
-				<img src="img/icons/camera.png" alt="" />
-				<h2>Photography</h2>
-				<p>
-					 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-			</div>
-		</div>
-		<div class="span3 animated-slow flyIn">
-			<div class="service-box">
-				<img src="img/icons/basket.png" alt="" />
-				<h2>Ecommerce</h2>
-				<p>
-					 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-			</div>
-		</div>-->
-	</div>
-</div>
-</section>
-<!-- end section: services -->
-<!-- section: works -->
-<section id="works" class="section">
-<!-- <div class="container clearfix">
-	<h4>Our Works</h4>
-	<!-- portfolio filter -->
-	<div class="row">
-		<div id="filters" class="span12">
-			<ul class="clearfix">
-				<li><a href="#" data-filter="*" class="active">
-				<h5>All</h5>
-				</a></li>
-				<li><a href="#" data-filter=".web">
-				<h5>Web</h5>
-				</a></li>
-				<li><a href="#" data-filter=".print">
-				<h5>Print</h5>
-				</a></li>
-				<li><a href="#" data-filter=".design">
-				<h5>Design</h5>
-				</a></li>
-				<li><a href="#" data-filter=".photography">
-				<h5>Photography</h5>
-				</a></li>
-			</ul>
-		</div>
-		<!-- END PORTFOLIO FILTERING -->
-	</div>
-	<div class="row">
-		<div class="span12">
-			<div id="portfolio-wrap">
-				<!-- portfolio item -->
-				<div class="portfolio-item grid print photography">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/1.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid print design web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/2.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid print design">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/3.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/4.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/5.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/6.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/7.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/8.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid photography web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/9.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item grid design web">
-					<div class="portfolio">
-						<a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-						<img src="img/works/10.png" alt="" />
-						<div class="portfolio-overlay">
-							<div class="thumb-info">
-								<h5>Portfolio name</h5>
-								<i class="icon-plus icon-2x"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-			</div>
-		</div>
-	</div>
-</div> -->
-</section>
-<!-- spacer section -->
-<section class="spacer bg3">
-<div class="container">
-	<div class="row">
-		<div class="span12 aligncenter flyLeft">
-			<blockquote class="large">
-				 We are an established and trusted web agency with a reputation for commitment and high integrity
-			</blockquote>
-		</div>
-		<div class="span12 aligncenter flyRight">
-			<i class="icon-star icon-10x"></i>
-		</div>
-	</div>
-</div>
-</section>
-<!-- end spacer section -->
-<!-- section: blog -->
-<section id="blog" class="section">
-<div class="container">
-	<h4>Our Blog</h4>
-	<!-- Three columns -->
-	<div class="row">
-		<div class="span3">
-			<div class="home-post">
-				<div class="post-image">
-					<img class="max-img" src="img/blog/img1.jpg" alt="" />
-				</div>
-				<div class="post-meta">
-					<i class="icon-file icon-2x"></i>
-					<span class="date">June 19, 2013</span>
-					<span class="tags"><a href="#">Design</a>, <a href="#">Blog</a></span>
-				</div>
-				<div class="entry-content">
-					<h5><strong><a href="#">New design trends</a></strong></h5>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-					</p>
-					<a href="#" class="more">Read more</a>
-				</div>
-			</div>
-		</div>
-		<div class="span3">
-			<div class="home-post">
-				<div class="post-image">
-					<img class="max-img" src="img/blog/img2.jpg" alt="" />
-				</div>
-				<div class="post-meta">
-					<i class="icon-file icon-2x"></i>
-					<span class="date">June 19, 2013</span>
-					<span class="tags"><a href="#">Design</a>, <a href="#">News</a></span>
-				</div>
-				<div class="entry-content">
-					<h5><strong><a href="#">Retro is great</a></strong></h5>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-					</p>
-					<a href="#" class="more">Read more</a>
-				</div>
-			</div>
-		</div>
-		<div class="span3">
-			<div class="home-post">
-				<div class="post-image">
-					<img class="max-img" src="img/blog/img3.jpg" alt="" />
-				</div>
-				<div class="post-meta">
-					<i class="icon-file icon-2x"></i>
-					<span class="date">June 22, 2013</span>
-					<span class="tags"><a href="#">Design</a>, <a href="#">Tips</a></span>
-				</div>
-				<div class="entry-content">
-					<h5><strong><a href="#">Isometric mockup</a></strong></h5>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-					</p>
-					<a href="#" class="more">Read more</a>
-				</div>
-			</div>
-		</div>
-		<div class="span3">
-			<div class="home-post">
-				<div class="post-image">
-					<img class="max-img" src="img/blog/img4.jpg" alt="" />
-				</div>
-				<div class="post-meta">
-					<i class="icon-file icon-2x"></i>
-					<span class="date">June 27, 2013</span>
-					<span class="tags"><a href="#">News</a>, <a href="#">Tutorial</a></span>
-				</div>
-				<div class="entry-content">
-					<h5><strong><a href="#">Free icon set</a></strong></h5>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-					</p>
-					<a href="#" class="more">Read more</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="blankdivider30"></div>
-	<div class="aligncenter">
-		<a href="#" class="btn btn-large btn-theme">More blog post</a>
-	</div>
-</div>
-</section>
+                <div class="span12 aligncenter">
+                    <h6 class="brown-font">Still have a question? Email us! <a class="brown-font" href="#">team@hakron.io</a> </h6>
 
-<!-- end spacer section -->
-<!-- section: contact -->
-<section id="contact" class="section green">
-<div class="container">
-	<h4>Get in Touch</h4>
-	<p>
-		 Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur ei eum. Sumo aeque assentior te eam, pri nominati posidonium consttuam
-	</p>
-	<div class="blankdivider30">
-	</div>
-	<div class="row">
-		<div class="span12">
-			<div class="cform" id="contact-form">
-				<div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-				<form action="" method="post" role="form" class="contactForm">
-					<div class="row">
-						<div class="span6">
-							<div class="field your-name form-group">
-								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-							</div>
-							<div class="field your-email form-group">
-								<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-							</div>
-							<div class="field subject form-group">
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-							</div>
-						</div>
-						<div class="span6">
-							<div class="field message form-group">
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validation"></div>
-							</div>
-							<input type="submit" value="Send message" class="btn btn-theme pull-left">
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-		<!-- ./span12 -->
-	</div>
-</div>
-</section>
-<footer>
-<div class="container">
-	<div class="row">
-		<div class="span6 offset3">
-			<ul class="social-networks">
-				<li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
-				<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
-				<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
-				<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
-			</ul>
-			<p class="copyright">
-				&copy; Maxim Theme. All rights reserved.
-                <div class="credits">
-                    <!-- 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section: faq -->
+    
+    <!-- section: schedule -->
+    <!--  Disabled
+    <section id="schedule" class="section blue">
+    </section>
+    -->
+    <!-- end spacer section -->
+    <!-- section: sponsors -->
+    <section id="sponsors" class="section">
+        <div class="container">
+            <h4>Sponsors</h4>
+            
+            <div class="row">
+            <div class="span12 aligncenter">
+
+
+            <div class="row">
+                <div class="span12 aligncenter">
+                <h2 class="brown-font">Interested in sponsoring? Send us an email: <a class="brown-font" href="#">team@hakron.io</a> </h2>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- end spacer section -->
+    <!-- section: contact -->
+            <!--
+    <section id="contact" class="section yellow">
+        <div class="container">
+            <div class="row">
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-1.jpg" alt="" />
+                        <h3>Cam Sinko</h3>
+                        <p>
+                            Marketing
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-2.jpg" alt="" />
+                        <h3>Matt McDade</h3>
+                        <p>
+                            Web developer
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-3.jpg" alt="" />
+                        <h3>Kyle Vasulka</h3>
+                        <p>
+                            Tech
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-4.jpg" alt="" />
+                        <h3>Julie Aichinger</h3>
+                        <p>
+                            Sponsors
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-5.jpg" alt="" />
+                        <h3>Emerson Cloud</h3>
+                        <p>
+                            Sponsors
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-5.jpg" alt="" />
+                        <h3>Rodney Morgan</h3>
+                        <p>
+                            Logistics
+                        </p>
+                    </div>
+                </div>
+
+                <div class="span2 offset flyIn clearfix">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-5.jpg" alt="" />
+                        <h3>István Gates</h3>
+                        <p>
+                            Relations
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/team/img-5.jpg" alt="" />
+                        <h3>Matt Morris</h3>
+                        <p>
+                            Sponsors
+                        </p>
+                    </div>
+                </div>
+                <div class="span2 flyIn">
+                    <div class="people">
+                        <img class="team-thumb img-circle" src="img/icons/Eel_Headshot.jpg" alt="" />
+                        <h3>Eels</h3>
+                        <p>
+                            Friendly Eel
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h4>Get in Touch</h4>
+            <p>
+                Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur ei eum. Sumo aeque assentior te eam, pri nominati posidonium consttuam
+            </p>
+            <div class="blankdivider30">
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="cform" id="contact-form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="field your-name form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field your-email form-group">
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field subject form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="field message form-group">
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <input type="submit" value="Send message" class="btn btn-theme pull-left">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span6 offset3">
+                    <ul class="social-networks">
+                        <li><a href="https://www.snapchat.com/add/uahakron"><i class="icon-circled icon-bgdark fa-snapchat icon-2x"></i></a></li>
+                        <li><a href="https://twitter.com/uahakron"><i class="icon-circled icon-bgdark fa-twitter icon-2x"></i></a></li>
+                        <li><a href="https://www.facebook.com/hakron2017/"><i class="icon-circled icon-bgdark fa-facebook icon-2x"></i></a></li>
+                        <li><a href="mailto:team@hakron.io"><i class="icon-circled icon-bgdark fa-envelope icon-2x"></i></a></li>
+                    </ul>
+                    <p class="" style="color: #202020">
+                    &copy; Maxim Theme. All rights reserved.
+                    </p>
+                    <div class="credits" style="color: #202020">
+                        <!-- 
                         All the links in the footer should remain intact. 
                         You can delete the links only if you purchased the pro version.
                         Licensing information: https://bootstrapmade.com/license/
                         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
                     -->
-                    <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
+                        <a style="color: #202020"href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
+                    </div>
                 </div>
-			</p>
-		</div>
-	</div>
-</div>
-<!-- ./container -->
-</footer>
-<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
-<script src="js/jquery.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/jquery.localscroll-1.2.7-min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/inview.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/validate.js"></script>
-<script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
-
+            </div>
+        </div>
+        <!-- ./container -->
+    </footer>
+    <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/inview.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="js/map.js"></script>
+    <!-- Google maps thing -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAplK70d2kA7PCk9X91FHB89swLTRfVgKY&callback=initMap"></script>
 </body>
+
 </html>
