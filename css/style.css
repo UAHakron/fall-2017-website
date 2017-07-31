@@ -304,11 +304,10 @@ h2.pagetitle {
 }
 .navbar .brand a {
 	padding: 0;
-	color: #fff;
+	color: #f7edcd;
 	font-size: 1.75em;
 	margin-left: 0;
 	font-weight: 400;
-	text-transform:uppercase;
 }
 .navbar .brand a:hover {
 	text-decoration: none;
@@ -334,9 +333,8 @@ h2.pagetitle {
 }
 ul#menu-main > li > a {
 	font-weight: 600;
-	color: #fff;
+	color: #f7edcd;
 	font-size:14px;
-	text-transform:uppercase;
 }
 ul#menu-main > li > a:hover {
 	padding: 9px 15px;
@@ -492,6 +490,10 @@ section.inner {
     color: #f7edcd;
 }
 
+.section.cream h4, .section.cream h1, .section.cream p {
+    color: #4a3223;
+}
+
 .clean-accordian {
     border: none;
     padding: 0px;
@@ -521,6 +523,26 @@ section.inner {
     color: #f7edcd;
 }
 
+.brown-font {
+    color: #4a3223;
+}
+.cream-link a:link {
+    color: #f7edcd;
+}
+
+.cream-link a:visited {
+    color: #f7edcd;
+}
+
+.cream-link a:hover {
+    color: #f7edcd;
+}
+
+.cream-link a:active {
+    color: #f7edcd;
+}
+
+
 .slider {
     font-family: sans-serif;
     color: #4a3223;
@@ -543,7 +565,7 @@ section.spacer {
 	color:#f7edcd;
 }   
 
-.spacer.green,.section.green {
+.green {
     background:#b7a70f;
 }
 
@@ -597,11 +619,10 @@ section.spacer blockquote cite {
 
 .faq-question {
     font-size: 1.5vmax;
-    color: #4A3223;
+    color: #f7edcd;
 }
 
 .faq-answer {
-    color: #4A3223;
     font-size: 2vmax;
     font-weight: bold;
 }
@@ -635,7 +656,6 @@ section.spacer blockquote cite {
 	display: block;
 	float: left;
 	padding: 2px 5px;
-	color: inherit;
 	margin-right: 5px;
 	margin-bottom: 5px;
 	font-weight: 600;
@@ -914,9 +934,6 @@ section#blog {
 
 /* === section about === */
 
-section#about {
-	background:#f2f2f2;
-}
 
 .people {
 	text-align:center;
