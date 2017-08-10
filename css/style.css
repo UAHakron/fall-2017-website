@@ -504,26 +504,12 @@ section.inner {
 }
 
 /* Please fix that dumb mobile shit */
-@media handheld {
+@media screen and (max-width : 979px) {
     .clean-accordian { 
          width: 80%; 
     }
 }
-@media screen and (max-width : 1224px) {
-    .clean-accordian { 
-         width: 80%; 
-    }
-}
-@media screen and (max-width : 480px) {
-    .clean-accordian { 
-         width: 80%; 
-    }
-}
-@media screen and (max-width : 320px) {
-    .clean-accordian { 
-         width: 80%; 
-    }
-}
+
 
 .accordian-inner {
     border: none;
