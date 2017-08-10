@@ -503,9 +503,24 @@ section.inner {
     min-width: 500px;   
 }
 /* Please fix that dumb mobile shit */
-@media handheld {
-    .clean-accordian { 
-         width: 80%; 
+@media screen and (min-width : 1824px) {
+    class*="clean-accordian" { 
+         max-width: 80%; 
+    }
+}
+@media screen and (min-width : 1224px) {
+    class*="clean-accordian" { 
+         max-width: 80%; 
+    }
+}
+@media screen and (min-width : 480px) {
+    class*="clean-accordian" { 
+         max-width: 80%; 
+    }
+}
+@media screen and (min-width : 320px) {
+    class*="clean-accordian" { 
+         max-width: 80%; 
     }
 }
 .accordian-inner {
