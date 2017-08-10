@@ -404,7 +404,7 @@ header .logo {
 }
 @media (max-width: 979px){
     #main-flexslider ul.slides li p {
-        font-size 36px;
+        font-size: 36px;
     }
 }
 #main-flexslider.flexslider {
