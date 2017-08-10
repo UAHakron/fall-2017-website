@@ -504,7 +504,7 @@ section.inner {
 }
 
 /* Please fix that dumb mobile shit */
-@media screen and (max-width : 979px) {
+@media max-width: 979px {
     .clean-accordian { 
          width: 80%; 
     }
