@@ -497,7 +497,7 @@ section.inner {
 .clean-accordian {
     border: none;
     padding: 0px;
-    width: 50vw;
+    width: 80%;
     margin: auto;
     max-width: 800px;
     min-width: 500px;   
