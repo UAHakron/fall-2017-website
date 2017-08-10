@@ -364,7 +364,11 @@ ul#menu-main > li > a:focus {
 	padding-top:160px;
 	text-align:center;
 }
-
+@media (max-width: 900px){
+    #header-wrapper {
+        min-height: 300px;
+    }
+}
 
 #header-wrapper h1 {
 	color: #FFFFFF;
@@ -385,6 +389,11 @@ header .logo {
 	margin-bottom:30px;
     width:65%;
     max-width:55em;
+}
+@media (max-width: 900px){
+    header .logo {
+        width:90%;
+    }
 }
 
 /* --- Header slider --- */
