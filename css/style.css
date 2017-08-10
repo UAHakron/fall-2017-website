@@ -502,6 +502,12 @@ section.inner {
     max-width: 800px;
     min-width: 500px;   
 }
+/* Please fix that dumb mobile shit */
+@media handheld {
+    .clean-accordian { 
+         width: 80%; 
+    }
+}
 .accordian-inner {
     border: none;
     padding: 5px;
