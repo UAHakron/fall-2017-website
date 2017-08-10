@@ -390,7 +390,7 @@ header .logo {
 #header-wrapper.header-slider {
 	background: #444 url(../img/background.svg) center;
 	background-repeat: repeat;
-    background-size: 50%;
+    background-size: 30%;
 }
 
 #main-flexslider ul.slides li p {
@@ -401,6 +401,11 @@ header .logo {
 	text-align: center;
 	line-height: 1;
 	color:#fff;
+}
+@media (max-width: 979px){
+    #main-flexslider ul.slides li p {
+        font-size 36px;
+    }
 }
 #main-flexslider.flexslider {
 		margin:0;
@@ -503,8 +508,8 @@ section.inner {
     min-width: 500px;   
 }
 
-/* Please fix that dumb mobile shit */
-@media handheld {
+/* IT WORKS. IT'S LIKE A WHOLE NEW BALLGAME NOW */
+@media (max-width: 979px) {
     .clean-accordian { 
         min-width: 95%;
     }
