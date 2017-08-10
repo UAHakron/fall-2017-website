@@ -384,6 +384,7 @@ ul#menu-main > li > a:focus {
 header .logo {
 	margin-bottom:30px;
     width:65%;
+    max-width:55em;
 }
 
 /* --- Header slider --- */
@@ -404,7 +405,7 @@ header .logo {
 }
 @media (max-width: 979px){
     #main-flexslider ul.slides li p {
-        font-size: 36px;
+        font-size: 50px;
     }
 }
 #main-flexslider.flexslider {
@@ -569,6 +570,11 @@ user-select: none;
 -webkit-user-drag: none;
 -webkit-user-select: none;
 -ms-user-select: none;
+}
+@media (max-width: 979px){
+    .slider {
+           -webkit-text-stroke-width: 2px;
+    }
 }
 
 
