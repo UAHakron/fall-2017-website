@@ -504,7 +504,7 @@ section.inner {
 }
 
 /* Please fix that dumb mobile shit */
-@media screen and (min-width : 1824px) {
+@media handheld {
     .clean-accordian { 
          width: 80%; 
     }
