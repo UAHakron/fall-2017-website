@@ -298,7 +298,7 @@ h2.pagetitle {
  /*	width: auto; */
 }
 .navbar .brand {
-	margin-left:0;
+	margin-left:7em;
 	padding: 0;
 	margin-top: 1.05em;
 }
@@ -364,7 +364,11 @@ ul#menu-main > li > a:focus {
 	padding-top:160px;
 	text-align:center;
 }
-
+@media (max-width: 900px){
+    #header-wrapper {
+        min-height: 300px;
+    }
+}
 
 #header-wrapper h1 {
 	color: #FFFFFF;
@@ -384,13 +388,19 @@ ul#menu-main > li > a:focus {
 header .logo {
 	margin-bottom:30px;
     width:65%;
+    max-width:55em;
+}
+@media (max-width: 900px){
+    header .logo {
+        width:90%;
+    }
 }
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
 	background: #444 url(../img/background.svg) center;
 	background-repeat: repeat;
-    background-size: 50%;
+    background-size: 30%;
 }
 
 #main-flexslider ul.slides li p {
@@ -401,6 +411,11 @@ header .logo {
 	text-align: center;
 	line-height: 1;
 	color:#fff;
+}
+@media (max-width: 979px){
+    #main-flexslider ul.slides li p {
+        font-size: 50px;
+    }
 }
 #main-flexslider.flexslider {
 		margin:0;
@@ -502,6 +517,15 @@ section.inner {
     max-width: 800px;
     min-width: 500px;   
 }
+
+/* IT WORKS. IT'S LIKE A WHOLE NEW BALLGAME NOW */
+@media (max-width: 979px) {
+    .clean-accordian { 
+        min-width: 95%;
+    }
+}
+
+
 .accordian-inner {
     border: none;
     padding: 5px;
@@ -555,6 +579,11 @@ user-select: none;
 -webkit-user-drag: none;
 -webkit-user-select: none;
 -ms-user-select: none;
+}
+@media (max-width: 979px){
+    .slider {
+           -webkit-text-stroke-width: 2px;
+    }
 }
 
 
