@@ -584,7 +584,7 @@ user-select: none;
 }
 @media (max-width: 979px){
     .slider {
-           -webkit-text-stroke-width: 1.5px;
+           -webkit-text-stroke-width: 0.75px;
     }
 }
 
