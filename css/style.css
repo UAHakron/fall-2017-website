@@ -435,6 +435,8 @@ header .logo {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 
