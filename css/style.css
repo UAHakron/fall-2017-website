@@ -588,6 +588,12 @@ user-select: none;
     }
 }
 
+.feature {
+    color: #f7edcd !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4a3223;
+}
+
 
 /* === section spacer === */
 
