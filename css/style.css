@@ -306,7 +306,7 @@ h2.pagetitle {
 	padding: 0;
 	color: #f7edcd;
 	font-size: 1.75em;
-	margin-left: 0;
+	margin-left: 2.5em;
 	font-weight: 400;
 }
 .navbar .brand a:hover {
@@ -414,7 +414,7 @@ header .logo {
 }
 @media (max-width: 979px){
     #main-flexslider ul.slides li p {
-        font-size: 50px;
+        font-size: 26px;
     }
 }
 #main-flexslider.flexslider {
@@ -435,6 +435,8 @@ header .logo {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 
@@ -582,8 +584,14 @@ user-select: none;
 }
 @media (max-width: 979px){
     .slider {
-           -webkit-text-stroke-width: 2px;
+           -webkit-text-stroke-width: 0.75px;
     }
+}
+
+.feature {
+    color: #f7edcd !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4a3223;
 }
 
 
