@@ -40,7 +40,16 @@ CONTENTS:
 /* animation */
 @import url('animate.css');
 
-
+@font-face {
+    font-family: "Coolvetica";
+    src: url("font/coolvetica-rg.ttf");
+}
+.coolvetica {
+    font-family: "Coolvetica"; 
+}
+b {
+    font-family: "Coolvetica";
+}
 
 /* =========================================================
 01. General
@@ -195,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #312f2b;
 	line-height:1.1em;
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family: "Coolvetica";
 }
 h1 {
 	font-size: 36px;
@@ -298,7 +307,7 @@ h2.pagetitle {
  /*	width: auto; */
 }
 .navbar .brand {
-	margin-left:7em;
+	margin-left: 20em;
 	padding: 0;
 	margin-top: 1.05em;
 }
