@@ -40,7 +40,16 @@ CONTENTS:
 /* animation */
 @import url('animate.css');
 
-
+@font-face {
+    font-family: "Coolvetica";
+    src: url("font/coolvetica-rg.ttf");
+}
+.coolvetica {
+    font-family: "Coolvetica"; 
+}
+b {
+    font-family: "Coolvetica";
+}
 
 /* =========================================================
 01. General
@@ -195,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #312f2b;
 	line-height:1.1em;
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family: "Coolvetica";
 }
 h1 {
 	font-size: 36px;
@@ -224,7 +233,7 @@ h6 {
 }
 strong {
 	font-weight:700;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Coolvetica";
 }
 small {
 	font-size: 0.75em; /* 12px */
@@ -279,6 +288,12 @@ h2.pagetitle {
 .alignright {
 	text-align: right;
 }
+@media (max-width: 768px){
+    .alignright {
+        text-align: center;
+    }
+}
+
 .alignleft {
 	text-align: left;
 }
@@ -297,8 +312,23 @@ h2.pagetitle {
 /* Uncomment to make nav expand full width */
  /*	width: auto; */
 }
+.centered {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    vertical-align: middle;
+}
+.banner {
+    margin-left: 1em;
+    display:block;
+    max-width:100px;
+    min-width:60px;
+    position:fixed;
+    top:0;
+    width:10%;
+    z-index:10000;
+}
 .navbar .brand {
-	margin-left:7em;
 	padding: 0;
 	margin-top: 1.05em;
 }
@@ -306,9 +336,16 @@ h2.pagetitle {
 	padding: 0;
 	color: #f7edcd;
 	font-size: 1.75em;
-	margin-left: 2.5em;
+	margin-left: 3.0em;
 	font-weight: 400;
 }
+
+@media (max-width: 768px){
+    .navbar .brand a {
+        margin-left: 1.4em;
+    }
+}
+
 .navbar .brand a:hover {
 	text-decoration: none;
  transition: color .15s linear;
@@ -412,9 +449,15 @@ header .logo {
 	line-height: 1;
 	color:#fff;
 }
+
 @media (max-width: 979px){
     #main-flexslider ul.slides li p {
-        font-size: 26px;
+        font-size: 54px;
+    }
+}
+@media (max-width: 768px){
+    #main-flexslider ul.slides li p {
+        font-size: 32px;
     }
 }
 #main-flexslider.flexslider {
@@ -572,26 +615,39 @@ section.inner {
 .slider {
     font-family: sans-serif;
     color: #4a3223;
-   -webkit-text-fill-color: #f7edcd; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: #4a3223;
-       user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+    -webkit-text-fill-color: #f7edcd; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #4a3223;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 @media (max-width: 979px){
     .slider {
-           -webkit-text-stroke-width: 0.75px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+@media (max-width: 768px){
+    .slider {
+        -webkit-text-stroke-width: 1.5px;
     }
 }
 
+
 .feature {
+    font-size: 40px;
     color: #f7edcd !important;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #4a3223;
+}
+@media (max-width: 768px){
+    .feature {
+        -webkit-text-stroke-width: 1.25px;
+        font-size: 30px;
+    }
 }
 
 
@@ -1427,7 +1483,41 @@ i.icon-white {
 /* =========================================================
 08. Buttons
 ============================================================ */
- 
+ /* register button */
+a.animated-button.thar-one {
+	color: #f7edcd;
+	cursor: pointer;
+	display: block;
+    margin: auto;
+	border: 2px solid #DFAF25;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    width: 8em;
+}
+a.animated-button.thar-one:hover {
+	color: #4A3223 !important;
+	background-color: rgb(223,175,37);
+	text-shadow: none;
+    border: 2x solid #4A3223;
+    text-decoration: none !important;
+}
+a.animated-button.thar-one:hover:before {
+	bottom: 0%;
+	top: auto;
+	height: 100%;
+}
+a.animated-button.thar-one:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
 .btn {
 	color: #fff;
 	text-shadow: none;
