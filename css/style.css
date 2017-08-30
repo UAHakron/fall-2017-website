@@ -248,6 +248,7 @@ em {
 .muted {
 	color: #A5A5A2;
 }
+
 .impressed {
 	text-shadow:
  -1px -1px 0 rgba(0, 0, 0, 0.5), /* shadow */  1px 1px 0 rgba(255, 255, 255, 0.9); /* highlight */
@@ -458,6 +459,9 @@ header .logo {
 @media (max-width: 768px){
     #main-flexslider ul.slides li p {
         font-size: 32px;
+    }
+    .longboi {
+        font-size: 26px;
     }
 }
 #main-flexslider.flexslider {
@@ -1492,6 +1496,10 @@ a.animated-button.thar-one {
 	border: 2px solid #DFAF25;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     width: 8em;
+    
+	box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.75);
 }
 a.animated-button.thar-one:hover {
 	color: #4A3223 !important;
