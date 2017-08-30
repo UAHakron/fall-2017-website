@@ -1507,6 +1507,9 @@ a.animated-button.thar-one:hover {
 	text-shadow: none;
     border: 2x solid #4A3223;
     text-decoration: none !important;
+    box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
 }
 a.animated-button.thar-one:hover:before {
 	bottom: 0%;
