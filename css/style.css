@@ -52,6 +52,10 @@ b {
     font-family: "Coolvetica";
 }
 
+.volunteer {
+    
+}
+
 /* =========================================================
 01. General
 ============================================================ */
@@ -345,6 +349,9 @@ h2.pagetitle {
 @media (max-width: 768px){
     .navbar .brand a {
         margin-left: 1.4em;
+    }
+    .volunteer {
+        font-size: 10px;
     }
 }
 
