@@ -42,13 +42,18 @@ CONTENTS:
 
 @font-face {
     font-family: "Coolvetica";
-    src: url("font/coolvetica-rg.ttf");
+    src: url("font/coolvetica-rg.ttf") ;
 }
+
 .coolvetica {
     font-family: "Coolvetica"; 
 }
 b {
     font-family: "Coolvetica";
+}
+
+.volunteer {
+    
 }
 
 /* =========================================================
@@ -344,6 +349,9 @@ h2.pagetitle {
 @media (max-width: 768px){
     .navbar .brand a {
         margin-left: 1.4em;
+    }
+    .volunteer {
+        font-size: 10px;
     }
 }
 
@@ -1507,6 +1515,9 @@ a.animated-button.thar-one:hover {
 	text-shadow: none;
     border: 2x solid #4A3223;
     text-decoration: none !important;
+    box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 16px 7px rgba(0, 0, 0, 0.75);
 }
 a.animated-button.thar-one:hover:before {
 	bottom: 0%;
