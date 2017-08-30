@@ -42,8 +42,9 @@ CONTENTS:
 
 @font-face {
     font-family: "Coolvetica";
-    src: url("font/coolvetica-rg.ttf");
+    src: url("font/coolvetica-rg.ttf") ;
 }
+
 .coolvetica {
     font-family: "Coolvetica"; 
 }
