@@ -42,11 +42,11 @@ CONTENTS:
 
 @font-face {
     font-family: "Coolvetica";
-    src: url("font/coolvetica-rg.ttf") ;
+    src: url("/font/coolvetica-rg.ttf") ;
 }
 
 .coolvetica {
-    font-family: "Coolvetica"; 
+    font-family: "Coolvetica" !important; 
 }
 b {
     font-family: "Coolvetica";
@@ -210,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #312f2b;
 	line-height:1.1em;
 	font-family: "Coolvetica";
+    letter-spacing: 2px;
 }
 h1 {
 	font-size: 36px;
@@ -458,10 +459,15 @@ header .logo {
 	line-height: 1;
 	color:#fff;
 }
-
+.longboi {
+    font-size 36px;
+}
 @media (max-width: 979px){
     #main-flexslider ul.slides li p {
         font-size: 54px;
+    }
+    .longboi {
+        font-size: 30px;
     }
 }
 @media (max-width: 768px){
@@ -545,7 +551,6 @@ section.section h4 {
 	margin-bottom: 40px;
 	font-size: 46px;
 	font-weight: 700;
-	letter-spacing: -1px;
 }
 section.inner {
 	padding: 50px 0 50px;
