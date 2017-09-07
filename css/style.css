@@ -55,6 +55,13 @@ b {
 .sponsorlogo {
     margin: 15px;
     width: auto;
+    max-width: 100%;
+}
+
+@media (max-width:768){
+    .sponsorlogo {
+        height: auto !important; 
+    }
 }
 
 /* =========================================================
@@ -77,6 +84,7 @@ body {
 	font-size: 16px;
 	font-weight:300;
 	font-family:'Open Sans', Arial, sans-serif;
+    max-width: 100%;
 }
 
 body {
