@@ -58,9 +58,9 @@ b {
     max-width: 100%;
 }
 
-@media (max-width:768){
+@media (max-width: 768px){
     .sponsorlogo {
-        height: auto !important; 
+        height: auto !important;
     }
 }
 
@@ -216,7 +216,7 @@ a:hover, a:active {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
-	color: #312f2b;
+	color: #4A3223;
 	line-height:1.1em;
 	font-family: "Coolvetica";
     letter-spacing: 2px;
@@ -1122,16 +1122,18 @@ body:before {
     bottom: 0px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 4px;
-    background-color: #fff;
+    width: 3px;
+    background-color: #4a3223;
+    z-index: 0;
 }
 
 body .entries {
     width: calc(100% - 80px);
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     position: relative;
     left: -5px;
+    
 }
 
 body .entries .entry {
@@ -1178,7 +1180,6 @@ body .entries .entry .title.big:before {
 body .entries .entry .body {
     color: #aaa;
 }
-
 body .entries .entry:nth-child(2n) {
     text-align: left;
     float: right;
@@ -1189,8 +1190,23 @@ body .entries .entry:nth-child(2n) .title:before {
 }
 
 body .entries .entry:nth-child(2n) .title.big:before {
-    -webkit-transform: translate(-4px, -50%);
-    transform: translate(-4px, -50%);
+  -webkit-transform: translate(-8px, -50%);
+          transform: translate(-8px, -50%);
+}
+
+.timeline-title {
+    font-size: 26px !important;
+    text-align: right;
+}
+body .entries .entry:nth-child(2n) .body .timeline-title {
+    text-align: left !important;
+}
+
+.timeline-day {
+    font-size: 32px !important;
+}
+.timeline-subtitle {
+    margin-top: -15px;
 }
 
 
