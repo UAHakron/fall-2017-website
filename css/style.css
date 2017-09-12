@@ -62,6 +62,13 @@ b {
     .sponsorlogo {
         height: auto !important;
     }
+    
+    .seventyfivepercent {
+        max-width: 75%;
+    }
+    .fiftypercent {
+        max-width: 50%;
+    }
 }
 
 /* =========================================================
@@ -1122,7 +1129,7 @@ body:before {
     bottom: 0px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 3px;
+    /* width: 3px;  Will add the line back later when i figure out how to make it look good */
     background-color: #4a3223;
     z-index: 0;
 }
@@ -1145,7 +1152,7 @@ body .entries .entry {
 }
 
 body .entries .entry:not(:first-child) {
-    margin-top: -60px;
+    margin-top: -50px;
 }
 
 body .entries .entry .title {
@@ -1207,6 +1214,48 @@ body .entries .entry:nth-child(2n) .body .timeline-title {
 }
 .timeline-subtitle {
     margin-top: -15px;
+}
+
+/* Gonna make this shit look completely different on mobile */
+@media (max-width: 768px) {
+    body:before {
+        width: 2px;
+        left: 7%;
+    }
+    body .entries .entry {
+        text-align: left;
+        padding: 5px;
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+    body .entries .entry:not(:first-child) {
+        margin-top: 0px;
+    }
+    body .entries .entry:nth-child(2n) {
+        float: none;
+    }
+    body .entries .entry .title:before {
+        width: 0;
+        height: 0;
+        border: 0;
+    }
+    body .entries .entry .title.big:before {
+        height: 0;
+        width 0;
+    }
+    .timeline-title {
+        text-align: left;
+        padding-left: 30px;
+    }
+    .timeline-day {
+        font-size 24px !important;
+    }
+    .timeline-subtitle {
+        margin-top: -15px;
+        text-align: left;
+        padding-left: 40px;
+    }
 }
 
 
