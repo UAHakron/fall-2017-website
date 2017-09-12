@@ -55,6 +55,13 @@ b {
 .sponsorlogo {
     margin: 15px;
     width: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    .sponsorlogo {
+        height: auto !important;
+    }
 }
 
 /* =========================================================
@@ -77,6 +84,7 @@ body {
 	font-size: 16px;
 	font-weight:300;
 	font-family:'Open Sans', Arial, sans-serif;
+    max-width: 100%;
 }
 
 body {
@@ -208,7 +216,7 @@ a:hover, a:active {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
-	color: #312f2b;
+	color: #4A3223;
 	line-height:1.1em;
 	font-family: "Coolvetica";
     letter-spacing: 2px;
@@ -684,6 +692,9 @@ section.spacer {
     color:#f7edcd;
 }
 
+.white {
+    background: #fff;
+}
 .yellow {
     background:#e0ae12;
 }
@@ -1100,8 +1111,106 @@ section#blog {
 	margin-right:20px;
 }
 
-/* === Contact section === */
 
+/* === Timeline section === */
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: #4a3223;
+    z-index: 0;
+}
+
+body .entries {
+    width: calc(100% - 80px);
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+    
+}
+
+body .entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+
+body .entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+
+body .entries .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #e0ae12;
+}
+
+body .entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #dd5431;
+    background-color: #4a3223;
+    border-radius: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+
+body .entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translate(8px, -50%);
+    transform: translate(8px, -50%);
+}
+
+body .entries .entry .body {
+    color: #aaa;
+}
+body .entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+
+body .entries .entry:nth-child(2n) .title:before {
+    left: -63px;
+}
+
+body .entries .entry:nth-child(2n) .title.big:before {
+  -webkit-transform: translate(-8px, -50%);
+          transform: translate(-8px, -50%);
+}
+
+.timeline-title {
+    font-size: 26px !important;
+    text-align: right;
+}
+body .entries .entry:nth-child(2n) .body .timeline-title {
+    text-align: left !important;
+}
+
+.timeline-day {
+    font-size: 32px !important;
+}
+.timeline-subtitle {
+    margin-top: -15px;
+}
+
+
+/* === Contact section === */
 
 /* Contact Form */
 
