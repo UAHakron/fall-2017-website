@@ -801,6 +801,7 @@ section.inner {
     color: #f7edcd !important;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #4a3223;
+    text-shadow: 3px 3px 5px #111
 }
 
 @media (max-width: 768px) {
@@ -808,6 +809,10 @@ section.inner {
         -webkit-text-stroke-width: 1.25px;
         font-size: 30px;
     }
+}
+
+.over-pattern {
+    text-shadow: 2px 2px 4px #111
 }
 
 
